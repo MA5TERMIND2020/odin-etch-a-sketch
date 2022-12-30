@@ -12,10 +12,14 @@
         <h1>Etch-a-Sketch</h1>    
         <section>
         <h2>Choose a Grid Size</h2>
-        <input type="range" min="2" max="100" value="16">
-        <button type="submit">Color Picker</button>
-        <button type="submit">Rainbow</button>
-        <button type="submit">Reset</button>
+        <input id="slider" type="range" min="2" max="100" value="16">
+        <p class="value">16</p>
+        <button id="rgb" type="submit">Rainbow</button>
+        <div class="colorAndPrompt">
+            <input type="color" id="color">
+            <p class="text">Custom</p>
+        </div>
+        <button id="reset" type="submit">Reset</button>
         </section>
     </header>
     <div class="container"></div>
